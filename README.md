@@ -1,2 +1,2 @@
-# CSTAlu
+# AlumniTrack
 CST alumni web portal
