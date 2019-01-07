@@ -18,6 +18,7 @@
             @include('inc.navbar')
             @include('inc.messages')
             @yield('content')
+            @include('inc.footer')
         </div>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
