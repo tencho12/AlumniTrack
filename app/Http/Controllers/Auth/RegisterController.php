@@ -50,13 +50,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'student_no'=> 'required|unique:users',
             'name' => 'required|string|max:255',
-            'CID_No'=> 'required|max:8',
-            'DOB'=> 'required',
-            'Department'=> 'required',
-            'Programme'=> 'required',
             'email' => 'required|string|email|max:255|unique:users',
-            //'Joining_Year'=> 'required',
-            'graduation_Year'=> 'required',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -72,13 +66,7 @@ class RegisterController extends Controller
         return User::create([
             'student_no'=> $data['student_no'],
             'name' => $data['name'],
-            'CID_No' => $data['CID_No'],
-            'DOB' => $data['DOB'],
-            'Department' => $data['Department'],
-            'Programme' => $data['Programme'],
             'email' => $data['email'],
-            'Joining_Year' => $data['Joining_year'],
-            'graduation_Year' => $data['graduation_Year'],
             'password' => bcrypt($data['password']),
         ]);
     }

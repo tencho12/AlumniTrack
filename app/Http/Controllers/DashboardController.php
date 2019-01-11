@@ -31,4 +31,8 @@ class DashboardController extends Controller
         // return view('dashboard')->with('posts',$user->posts);
         return view('dashboard')->with('posts',$user);
     }
+    public function profile(){
+        return view('pages.profile');
+    }
+
 }

@@ -3,7 +3,10 @@
 @section('content')
     <div class="container">
         <h1>About us</h1>
-        <p class="jumbotron" id="abt">The College of Science and Technology (CST) is the first institute in the country to offer 
+        <h3>Our vision:</h3>
+        <blockquote>A centre of excellence in science and technology enriched with GNH values.</blockquote>
+        <p class="jumbotron" id="abt">
+            The College of Science and Technology (CST) is the first institute in the country to offer 
             undergraduate degree programmes in engineering under the Royal University of Bhutan.  The college 
             aspires to be a centre of excellence in the field of science and technology enriched with GNH values 
             by offering quality programmes that are relevant to the need of the job market both within and outside 
